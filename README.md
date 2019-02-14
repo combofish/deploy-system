@@ -8,3 +8,11 @@ i3/config
 conky/conkyrc_test.lua  
 conky/conkyrc2.lua
 
+## bash
+.bashrc  
+
+## scripts
+.bin/   
+ 
+## vim
+.vimrc  
