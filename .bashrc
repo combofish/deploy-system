@@ -21,8 +21,8 @@ alias lm='ls -la | more'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
-alias apti='apt-get install'
-alias apts='apt-cache search'
+# alias apti='apt-get install'
+# alias apts='apt-cache search'
 alias chmodx='chmod u+x'
 
 alias clr='clear'
@@ -30,7 +30,7 @@ alias clr='clear'
 alias ga='git add'
 alias gp='git push'
 
-export GPIO="/sys/class/gpio"
+# export GPIO="/sys/class/gpio"
 
 # self scripts
 # . ~/.bin/make_local_log.sh
