@@ -33,4 +33,4 @@ alias gp='git push'
 export GPIO="/sys/class/gpio"
 
 # self scripts
-. ~/.bin/make_local_log.sh
+# . ~/.bin/make_local_log.sh
