@@ -13,3 +13,7 @@ export PATH=$HOME/Downloads/gcc-arm-none-eabi-8-2018-q4-major/bin/:$PATH
 export PATH=$HOME/.bin/stm32loader/:$PATH
 #export NODE_ENV=production
 export NODE_ENV=development
+
+### used in arch
+#export ZSH=$HOME/sources/oh-my-zsh
+
