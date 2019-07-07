@@ -1,5 +1,15 @@
-
 # add to .zshrc
 
-
+### change PATH
 export PATH=$HOME/.local/bin:$PATH
+
+### alias
+alias lm="ls -la | more"
+alias h="history"
+alias chmodx="chmod u+x"
+
+### used in gentoo
+export PATH=$HOME/Downloads/gcc-arm-none-eabi-8-2018-q4-major/bin/:$PATH
+export PATH=$HOME/.bin/stm32loader/:$PATH
+#export NODE_ENV=production
+export NODE_ENV=development
