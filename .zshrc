@@ -1,9 +1,11 @@
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/sources/oh-my-zsh
-export PATH=$HOME/.local/bin:$PATH
+[[ -f ~/.shrc ]] && . ~/.shrc
 
 
 # Set name of the theme to load --- if set to "random", it will
