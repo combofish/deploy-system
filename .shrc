@@ -7,13 +7,18 @@ export PATH=$HOME/.local/bin:$PATH
 alias lm="ls -la | more"
 alias h="history"
 alias chmodx="chmod u+x"
+alias ipython="ipython --pylab"
 
 ### used in gentoo
 export PATH=$HOME/Downloads/gcc-arm-none-eabi-8-2018-q4-major/bin/:$PATH
 export PATH=$HOME/.bin/stm32loader/:$PATH
+export PATH=$HOME/.gem/ruby/2.3.0/bin/:$PATH
 #export NODE_ENV=production
 export NODE_ENV=development
 
 ### used in arch
 #export ZSH=$HOME/sources/oh-my-zsh
 
+### Used in debain-like system
+alias apti="apt-get install"
+alias apts="apt-cache search"

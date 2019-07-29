@@ -2,6 +2,7 @@
 
 modules_list=(numpy scipy pandas scikit-learn tornado pillow)
 modules_list_py=(pyPdf python-nmap pygeoip mechanize BeautifulSoup4)
+# SerialTool
 
 function install_pkg()
 {
@@ -18,5 +19,5 @@ do
     install_pkg $module
 done
 
-pip install ipython[all] --user $USER
+# pip install ipython[all] --user $USER
 
