@@ -25,4 +25,5 @@ alias apts="apt-cache search"
 
 ### val
 export BRIGHTNESS="/sys/class/backlight/intel_backlight/brightness"
-export MAX_BRIGHTNESS="/sys/class//backlight/intel_backlight/max_brightness"
+export MAX_BRIGHTNESS="/sys/class/backlight/intel_backlight/max_brightness"
+export BRIGHT="/sys/class/backlight/intel_backlight/"

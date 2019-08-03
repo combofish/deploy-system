@@ -2,6 +2,7 @@
 
 modules_list=(numpy scipy pandas scikit-learn tornado pillow)
 modules_list_py=(pyPdf python-nmap pygeoip mechanize BeautifulSoup4)
+# requests flask scrapy djingo pyramid wheezy.web
 # SerialTool
 
 function install_pkg()
