@@ -9,12 +9,35 @@ alias h="history"
 alias chmodx="chmod u+x"
 alias ipython="ipython --pylab"
 
-### used in gentoo
-export PATH=$HOME/Downloads/gcc-arm-none-eabi-8-2018-q4-major/bin/:$PATH
-export PATH=$HOME/.bin/stm32loader/:$PATH
-export PATH=$HOME/.gem/ruby/2.3.0/bin/:$PATH
-#export NODE_ENV=production
-export NODE_ENV=development
+release_name=`uname -r | cut -d '-' -f 2`
+if test $release_name = 'gentoo' ; then
+    #### alias on gentoo
+    alias eqf='equery f'
+    alias equ='equery u'
+    alias eqh='equery h'
+    alias eqa='equery a'
+    alias eqb='equery b'
+    alias eql='equery l'
+    alias eqd='equery d'
+    alias eqg='equery g'
+    alias eqc='equery c'
+    alias eqk='equery k'
+    alias eqm='equery m'
+    alias eqy='equery y'
+    alias eqs='equery s'
+    alias eqw='equery w'
+
+    
+    ### used in gentoo
+    export PATH=$HOME/Downloads/gcc-arm-none-eabi-8-2018-q4-major/bin/:$PATH
+    export PATH=$HOME/.bin/stm32loader/:$PATH
+    export PATH=$HOME/.gem/ruby/2.3.0/bin/:$PATH
+    #export NODE_ENV=production
+    export NODE_ENV=development
+
+fi
+
+unset release_name
 
 ### used in arch
 #export ZSH=$HOME/sources/oh-my-zsh
