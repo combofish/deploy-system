@@ -1,0 +1,3 @@
+# required by pentoo/pentoo-desktop-2018.2-r4::pentoo[X]
+# required by pentoo/pentoo-desktop (argument)
+=app-admin/genmenu-9999 **

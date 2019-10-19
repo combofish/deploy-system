@@ -1,0 +1,17 @@
+# required by dev-python/matplotlib-2.2.4::gentoo[qt5]
+# required by matplotlib (argument)
+>=dev-python/PyQt5-5.12.2 gui widgets
+
+# for ipython
+# required by dev-python/pyzmq-17.1.0::gentoo
+# required by dev-python/qtconsole-4.3.1-r1::gentoo
+# required by dev-python/ipython-7.5.0::gentoo[qt5]
+# required by dev-python/ipykernel-5.1.0::gentoo
+# required by dev-python/ipyparallel-6.2.3::gentoo
+>=net-libs/zeromq-4.3.1 drafts
+# required by dev-python/qtconsole-4.3.1-r1::gentoo
+# required by dev-python/ipython-7.5.0::gentoo[qt5]
+# required by dev-python/ipykernel-5.1.0::gentoo
+# required by dev-python/ipyparallel-6.2.3::gentoo
+>=dev-python/PyQt5-5.12.2 svg
+

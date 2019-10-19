@@ -1,0 +1,8 @@
+x11-xorg/xorg-server
+sys-libs/binutils-libs
+dev-lang/ruby
+dev-ruby/did_you_mean
+sys-libs/glibc
+sys-devel/binutils
+
+dev-embedded/avr-libc

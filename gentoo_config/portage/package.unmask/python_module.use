@@ -1,0 +1,12 @@
+# x11-apps/mkfontdir-1.2.0
+# x11-apps/mkfontscale-1.2.1
+# required by dev-perl/gnome2-perl-1.46.0::gentoo
+# required by x11-misc/shutter-0.94.3::gentoo
+# required by @selected
+# required by @world (argument)
+# /usr/portage/profiles/arch/base/package.mask:
+# Andreas K. Hüttel <dilfridge@gentoo.org> (2019-08-30)
+# Perl 5.26 will be removed soon. Please upgrade.
+# This block is here (and not in ../../package.mask) since we still need
+# it and unmask it on hppa and sparc. See bug 676062 and bug 683018.
+=dev-lang/perl-5.26.2

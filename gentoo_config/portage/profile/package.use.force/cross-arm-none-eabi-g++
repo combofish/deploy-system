@@ -1,0 +1,4 @@
+cross-arm-none-eabi-g++/binutils -multilib
+cross-arm-none-eabi-g++/gcc -multilib
+cross-arm-none-eabi-g++/linux-headers -multilib
+cross-arm-none-eabi-g++/gdb -multilib

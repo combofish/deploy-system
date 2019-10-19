@@ -1,0 +1,4 @@
+cross-avr
+cross-arm-unknown-linux-gnueabi
+cross-arm-none-eabi
+cross-arm-none-eabi-g++

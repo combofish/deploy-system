@@ -1,0 +1,35 @@
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+
+CHOST="x86_64-pc-linux-gnu"
+CFLAGS="-march=ivybridge -O3 -pipe"
+CXXFLAGS="${CFLAGS}"
+MAKEOPTS="-j5"
+#EMERGE_DEFAULT_OPTS="--jobs 3"
+
+USE="X -gtk -gnome qt4 -bindist qt5 acl dvd alsa nvidia cdr"  # kde
+LIBREOFFICE_EXTENSIONS="nlpsolver wiki-publisher"
+PORTAGE_ELOG_SYSTEM="save"
+PORTAGE_ELOG_CLASSES="warn error info log" # qa(质量保证)
+
+#SYNC="rsync://mirrors.ustc.edu.cn/gentoo-portage/"
+#SYNC="rsync://mirrors.163.com/gentoo-portage"
+GENTOO_MIRRORS="http://mirrors.163.com/gentoo/ http://mirrors.aliyun.com/gentoo/ https://mirrors.tuna.tsinghua.edu.cn/gentoo"
+ACCEPT_KEYWORDS="~amd64"
+ACCEPT_LICENSE="*"
+
+LINGUAS="en_US.UTF-8 zh_CN.UTF-8"
+INPUT_DEVICE="evdev  synaptics"
+VIDEO_CARDS="nvidia"
+AUTOCLEAN="yes"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR="/usr/portage"
+DISTDIR="/usr/portage/distfiles"
+PKGDIR="/usr/portage/packages"
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C

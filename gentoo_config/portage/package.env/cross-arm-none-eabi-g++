@@ -1,0 +1,4 @@
+cross-arm-none-eabi-g++/binutils cross-arm-none-eabi-g++/binutils.conf
+cross-arm-none-eabi-g++/gcc cross-arm-none-eabi-g++/gcc.conf
+cross-arm-none-eabi-g++/linux-headers cross-arm-none-eabi-g++/linux-headers.conf
+cross-arm-none-eabi-g++/gdb cross-arm-none-eabi-g++/gdb.conf

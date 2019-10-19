@@ -1,0 +1,789 @@
+>=dev-util/astyle-3.1-r2 java
+
+# required by x11-misc/polybar-3.2.1::gentoo
+
+##
+# required by media-gfx/digikam-6.1.0::gentoo[-webkit]
+# required by media-gfx/digikam (argument)
+>=dev-qt/qtwebengine-5.12.3 widgets
+# required by media-gfx/hugin-2019.0.0::gentoo
+# required by media-gfx/digikam-6.1.0::gentoo[panorama]
+# required by media-gfx/digikam (argument)
+>=media-libs/vigra-1.11.1-r2 openexr
+# required by dev-qt/qtwebengine-5.12.3::gentoo
+# required by media-gfx/digikam-6.1.0::gentoo[-webkit]
+# required by media-gfx/digikam (argument)
+>=dev-qt/qtwebchannel-5.12.3 qml
+# required by dev-qt/qtwebengine-5.12.3::gentoo
+# required by media-gfx/digikam-6.1.0::gentoo[-webkit]
+# required by media-gfx/digikam (argument)
+>=media-libs/libvpx-1.8.0-r1 svc
+##
+
+
+# required by @selected
+# required by @world (argument)
+>=x11-libs/cairo-1.16.0 xcb
+# required by kde-frameworks/kcoreaddons-5.51.0::gentoo
+# required by kde-frameworks/kdeclarative-5.51.0::gentoo
+# required by kde-frameworks/plasma-5.51.0::gentoo
+# required by kde-frameworks/krunner-5.51.0::gentoo
+# required by kde-plasma/milou-5.14.2::gentoo
+# required by kde-plasma/plasma-workspace-5.14.2::gentoo
+# required by virtual/notification-daemon-0::gentoo[kde]
+# required by x11-libs/libnotify-0.7.7-r1::gentoo
+# required by media-video/vlc-3.0.4::gentoo[libnotify]
+# required by media-libs/phonon-vlc-0.10.1::gentoo
+# required by media-libs/phonon-4.10.1::gentoo[vlc]
+# required by kde-frameworks/khtml-5.51.0::gentoo
+# required by kde-apps/kio-extras-18.08.2::gentoo[man]
+>=dev-qt/qtcore-5.11.2-r1 icu
+# required by dev-qt/qtwayland-5.11.2::gentoo
+# required by kde-frameworks/kwayland-5.51.0::gentoo
+# required by kde-plasma/kscreenlocker-5.14.2::gentoo
+# required by kde-plasma/kwin-5.14.2::gentoo
+# required by kde-plasma/libkworkspace-5.14.2::gentoo
+# required by kde-plasma/kde-cli-tools-5.14.2::gentoo
+# required by kde-plasma/breeze-5.14.2::gentoo
+# required by kde-plasma/plasma-integration-5.14.2::gentoo
+# required by kde-plasma/plasma-workspace-5.14.2::gentoo
+# required by virtual/notification-daemon-0::gentoo[kde]
+# required by x11-libs/libnotify-0.7.7-r1::gentoo
+# required by media-video/vlc-3.0.4::gentoo[libnotify]
+# required by media-libs/phonon-vlc-0.10.1::gentoo
+# required by media-libs/phonon-4.10.1::gentoo[vlc]
+# required by kde-frameworks/khtml-5.51.0::gentoo
+# required by kde-apps/kio-extras-18.08.2::gentoo[man]
+>=dev-qt/qtgui-5.11.2 jpeg dbus egl
+# required by kde-plasma/kwin-5.14.2::gentoo
+# required by kde-plasma/libkworkspace-5.14.2::gentoo
+# required by kde-plasma/kde-cli-tools-5.14.2::gentoo
+# required by kde-plasma/kscreenlocker-5.14.2::gentoo
+# required by kde-plasma/plasma-workspace-5.14.2::gentoo
+# required by virtual/notification-daemon-0::gentoo[kde]
+# required by x11-libs/libnotify-0.7.7-r1::gentoo
+# required by media-video/vlc-3.0.4::gentoo[libnotify]
+# required by media-libs/phonon-vlc-0.10.1::gentoo
+# required by media-libs/phonon-4.10.1::gentoo[vlc]
+# required by kde-frameworks/khtml-5.51.0::gentoo
+# required by kde-apps/kio-extras-18.08.2::gentoo[man]
+>=media-libs/mesa-18.2.3 wayland
+
+# required by sci-electronics/kicad-5.0.0-r1::gentoo
+# required by sci-electronics/kicad (argument)
+>=dev-libs/boost-1.65.0 context python
+# required by sci-electronics/kicad-5.0.0-r1::gentoo[ngspice]
+# required by sci-electronics/kicad (argument)
+>=sci-electronics/ngspice-27-r1 shared
+
+
+sys-libs/ncurses cxx -gpm profile -static-libs
+
+# required by app-admin/conky-1.10.8-r2::gentoo[X,nvidia]
+# required by app-admin/conky (argument)
+>=x11-drivers/nvidia-drivers-410.57-r1 static-libs
+# required by sys-power/apcupsd-3.14.14-r2::gentoo
+# required by app-admin/conky-1.10.8-r2::gentoo[apcupsd]
+# required by app-admin/conky (argument)
+>=sys-apps/util-linux-2.32.1 tty-helpers
+
+# for install xterm
+# [ebuild  N     ] x11-apps/luit-1.1.1::gentoo  137 KiB
+# [ebuild  N     ] media-fonts/font-alias-1.0.3-r1::gentoo  101 KiB
+# [ebuild  N     ] x11-apps/bdftopcf-1.1::gentoo  148 KiB
+# [ebuild  N     ] media-fonts/font-misc-misc-1.1.2-r1::gentoo  USE="X nls" 1,889 KiB
+x11-terms/xterm openpty unicode -Xaw3d -toolbar -truetype -xinerama
+# end
+
+x11-wm/stumpwm contrib -doc emacs
+# [nomerge       ]  dev-lisp/cl-ppcre-2.1.0::gentoo 
+# [ebuild  N     ]   dev-lisp/cl-ppcre-unicode-2.1.0::gentoo  156 KiB
+# [ebuild  N     ]    dev-lisp/cl-unicode-0.1.5::gentoo  475 KiB
+# [ebuild  N     ]     dev-lisp/cl-ppcre-2.1.0::gentoo  0 KiB
+# [ebuild  N     ]      dev-lisp/flexi-streams-1.0.17::gentoo  133 KiB
+# [ebuild  N     ]       dev-lisp/trivial-gray-streams-20170830::gentoo  8 KiB
+# [ebuild  N     ]  dev-lisp/clx-0.7.5::gentoo  USE="-doc" 458 KiB
+# [ebuild  N     ]  dev-lisp/alexandria-20171029::gentoo  USE="-doc" 45 KiB
+
+# add for tilda
+x11-terms/tilda
+x11-libs/vte crypt introspection -debug -glade -vala -vanilla
+# end
+
+# ntfs-3g
+sys-fs/ntfs3g acl external-fuse ntfsprogs xattr -debug -ntfsdecrypt -static-libs -suid
+
+# x11-misc/xdotool-3.20160805.1::gentoo  USE="-examples"
+
+# for install MongoDB
+# [ebuild  N     ] dev-db/mongodb-4.0.3::gentoo  USE="ssl tools -debug -kerberos -libressl -mms-agent -test" PYTHON_TARGETS="python2_7" 48,277 KiB
+# [ebuild  N     ]  app-admin/mongo-tools-4.0.3::gentoo  USE="ssl -sasl" 10,620 KiB
+# [ebuild  N     ]   dev-lang/go-1.11.1:0/1.11.1::gentoo  USE="-gccgo" 74,704 KiB
+# [ebuild  N     ]  dev-python/cheetah-2.4.4-r1::gentoo  PYTHON_TARGETS="python2_7" 187 KiB
+# [ebuild  N     ]   dev-python/markdown-3.0.1::gentoo  USE="-doc -pygments -test" PYTHON_TARGETS="python2_7 python3_6 -pypy -pypy3 -python3_4 -python3_5 -python3_7" 278 KiB
+# [ebuild  N     ]  dev-python/pyyaml-3.13::gentoo  USE="-examples -libyaml" PYTHON_TARGETS="python2_7 python3_6 -pypy -pypy3 -python3_4 -python3_5 -python3_7" 265 KiB
+# [ebuild  N     ]  dev-libs/snowball-stemmer-0.20140325::gentoo  USE="-static-libs" 127 KiB
+# end
+# for install py3status
+#[ebuild  N     ] x11-misc/py3status-3.13::gentoo  USE="udev -gevent" PYTHON_TARGETS="python2_7 python3_6 -python3_4 -python3_5" 292 KiB
+#[ebuild  N     ]  dev-python/pyudev-0.21.0::gentoo  USE="qt5 -pygobject -test" PYTHON_TARGETS="python2_7 python3_6 -python3_4 -python3_5" 88 KiB
+#[ebuild  N     ]   dev-python/PyQt5-5.10.1-r1::gentoo  USE="-bluetooth -dbus -debug -declarative -designer -examples -gles2 -gui -help -location -multimedia -network -opengl -positioning -printsupport -sensors -serialport -sql -svg -testlib -webchannel -webengine -webkit -websockets -widgets -x11extras -xmlpatterns" PYTHON_TARGETS="python2_7 python3_6 -python3_4 -python3_5 -python3_7" 0 KiB
+#[ebuild  N     ]    dev-python/sip-4.19.13:0/12::gentoo  USE="-debug -doc"
+# end
+
+# for ftp
+net-ftp/vsftpd pam ssl tcpd -caps -libressl (-selinux) -xinetd
+net-ftp/ftpbase pam
+
+net-p2p/amule X nls -daemon -debug -geoip -remote -stats -upnp
+
+# SDL
+media-libs/sdl2-mixer wav flac fluidsynth mad midi mikmod mod modplug mp3 opus playtools -static-libs timidity tremor vorbis
+media-libs/sdl-mixer wav flac fluidsynth mad midi mikmod mod modplug mp3 playtools smpeg -static-libs timidity vorbis
+media-libs/sdl2-ttf X -static-libs
+media-libs/sdl-ttf X -static-libs
+media-libs/sdl-image gif jpeg png -static-libs tiff webp
+# end
+
+# [ebuild  N     ] media-libs/opus-1.3  USE="-custom-modes -doc -static-libs" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_X86="sse" 
+# [ebuild  N     ] app-eselect/eselect-timidity-20110513 
+# [ebuild  N     ] media-sound/timidity-eawpatches-12-r5 
+# [ebuild  N     ] media-libs/opusfile-0.11  USE="float http -doc (-fixed-point) -libressl -static-libs" 
+# [ebuild   R    ] media-libs/sdl-image-1.2.12-r2  USE="gif* jpeg* tiff* webp*" 
+# [ebuild  N     ] media-libs/libmikmod-3.3.11.1  USE="alsa threads (-altivec) (-coreaudio) -debug -nas -openal -oss -pulseaudio -static-libs" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_X86="(-sse2)" 
+# [ebuild  N     ] media-libs/smpeg-0.4.4-r10  USE="X -debug -opengl -static-libs" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_X86="(-mmx)" 
+# [ebuild  N     ] media-sound/timidity++-2.14.0-r3  USE="X alsa ncurses -ao -emacs -flac -gtk -jack -motif -nas -oss (-selinux) -slang -speex -tk -vorbis" 
+# [ebuild  N     ] media-libs/libmodplug-0.8.9.0  USE="-static-libs" ABI_X86="(64) -32 (-x32)" 
+# [ebuild  N     ] media-libs/tremor-0_pre20130223-r1  USE="-low-accuracy -static-libs" ABI_X86="(64) -32 (-x32)" 
+# [ebuild   R    ] media-libs/sdl2-ttf-2.0.14 
+# [ebuild   R    ] media-libs/sdl-ttf-2.0.11-r1 
+# [ebuild  N     ] media-sound/fluidsynth-1.1.11  USE="alsa ipv6 readline -dbus -debug -examples -jack -ladspa -lash -portaudio -pulseaudio -sndfile" ABI_X86="(64) -32 (-x32)" 
+# [ebuild   R    ] media-libs/sdl2-mixer-2.0.4  USE="flac* fluidsynth* mad* midi* mikmod* mod* modplug* opus* playtools* timidity* tremor* vorbis*" 
+# [ebuild   R    ] media-libs/sdl-mixer-1.2.12-r4  USE="flac* fluidsynth* mad* midi* mikmod* mod* modplug* mp3* playtools* smpeg* timidity* vorbis*"
+
+# add fot clisp
+dev-lisp/clisp X berkdb gdbm pcre readline unicode zlib dbus fastcgi gtk hyperspec postgres (-svm) threads
+# [ebuild  N     ]  x11-misc/imake-1.0.7-r1::gentoo  153 KiB
+# [ebuild  N     ]   x11-misc/xorg-cf-files-1.0.6-r1::gentoo  335 KiB
+sys-libs/db cxx -doc -examples -java tcl -test
+# [ebuild  N     ]  dev-libs/libsigsegv-2.12-r1::gentoo  441 KiB
+# [ebuild  N     ]  dev-libs/ffcall-2.1::gentoo  922 KiB
+
+# for julia
+# required by dev-lang/julia-0.6.3-r1::gentoo
+# required by dev-lang/julia (argument)
+>=sci-libs/fftw-3.3.8 threads
+
+# [ebuild  N     ] dev-lang/julia-0.6.3-r1::gentoo  7,463 KiB
+# [ebuild  N     ]  sci-libs/spqr-1.3.1::gentoo  USE="-doc -metis -static-libs -tbb" 1,090 KiB
+# [ebuild  N     ]  sci-libs/arpack-3.5.0::gentoo  USE="-doc -examples -mpi -static-libs" 928 KiB
+# [ebuild  N     ]   virtual/lapack-3.7::gentoo  0 KiB
+# [ebuild  N     ]    sci-libs/lapack-reference-3.7.0::gentoo  USE="deprecated" 7,188 KiB
+# [ebuild  N     ]  sci-libs/umfpack-5.6.2::gentoo  USE="cholmod -doc -static-libs" 762 KiB
+# [ebuild  N     ]   virtual/blas-3.7::gentoo  0 KiB
+# [ebuild  N     ]    sci-libs/blas-reference-20161223::gentoo  USE="-doc" 0 KiB
+# [ebuild  NS    ]  sys-devel/clang-4.0.1:4::gentoo [7.0.0:7::gentoo] USE="static-analyzer -debug -default-compiler-rt -default-libcxx -doc -test -xml" ABI_X86="(64) -32 (-x32)" LLVM_TARGETS="AMDGPU BPF NVPTX (X86) -AArch64 -ARM -Hexagon -Lanai -MSP430 -Mips -PowerPC -RISCV -Sparc -SystemZ -XCore" PYTHON_TARGETS="python2_7" 11,332 KiB
+# [ebuild  NS    ]   sys-devel/clang-runtime-4.0.1-r1:4.0.1::gentoo [7.0.0:7.0.0::gentoo] USE="compiler-rt openmp sanitize -crt -libcxx" ABI_X86="(64) -32 (-x32)" 0 KiB
+# [ebuild  NS    ]    sys-libs/compiler-rt-sanitizers-4.0.1:4.0.1::gentoo [7.0.0:7.0.0::gentoo] USE="clang -test" 1,403 KiB
+# [ebuild  NS    ]    sys-libs/compiler-rt-4.0.1:4.0.1::gentoo [7.0.0:7.0.0::gentoo] USE="clang -test" 0 KiB
+# [ebuild  N     ]  dev-libs/libgit2-0.27.7:0/27::gentoo  USE="curl ssh threads -examples -gssapi -libressl -test -trace" 4,671 KiB
+# [ebuild  NS    ]  sys-devel/llvm-4.0.1-r1:4::gentoo [7.0.0-r1:7::gentoo] USE="libffi ncurses -debug -doc -gold -libedit -test" ABI_X86="(64) -32 (-x32)" LLVM_TARGETS="AMDGPU BPF NVPTX (X86) -AArch64 -ARM -Hexagon -Lanai -MSP430 -Mips -PowerPC -RISCV -Sparc -SystemZ -XCore" 20,572 KiB
+# [ebuild  N     ]  sci-mathematics/glpk-4.63:0/40::gentoo  USE="-doc -examples -gmp -mysql -odbc -static-libs" 4,035 KiB
+# [ebuild  N     ]  sci-libs/ccolamd-2.8.0::gentoo  USE="-static-libs" 303 KiB
+# [ebuild  N     ]  sci-libs/camd-2.3.1::gentoo  USE="-doc -static-libs" 313 KiB
+# [ebuild  N     ]  sci-libs/cholmod-2.1.2::gentoo  USE="-cuda -doc -lapack -metis -minimal -static-libs" 642 KiB
+# [ebuild  N     ]   sci-libs/amd-2.3.1::gentoo  USE="fortran -doc -static-libs" 333 KiB
+# [ebuild  N     ]  dev-util/patchelf-0.9_p20180129::gentoo  98 KiB
+# [ebuild   R    ]  sci-libs/fftw-3.3.8:3.0/3::gentoo  USE="fortran openmp threads* (-altivec) -doc -mpi (-neon) -quad -static-libs -test (-zbus)" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_X86="sse sse2 -avx -avx2 -fma3 -fma4" 0 KiB
+# [ebuild  N     ]  dev-libs/openspecfun-0.5.1::gentoo  USE="-static-libs" 119 KiB
+# [ebuild  N     ]   sci-libs/openlibm-0.5.4:0/0.5.4.0::gentoo  USE="-static-libs" 345 KiB
+# [nomerge       ] sci-libs/blas-reference-20161223::gentoo  USE="-doc" 
+# [ebuild  N     ]  app-eselect/eselect-blas-0.1::gentoo  0 KiB
+# [nomerge       ] sci-libs/lapack-reference-3.7.0::gentoo  USE="deprecated" 
+# [ebuild  N     ]  app-eselect/eselect-lapack-0.1::gentoo  0 KiB
+# end
+
+# for letax
+# [ebuild  N     ] dev-texlive/texlive-latex-2017::gentoo  USE="-doc -source" 863 KiB
+# [ebuild  N     ]  dev-texlive/texlive-basic-2017-r1::gentoo  USE="luajittex -doc -source" 4,740 KiB
+app-text/texlive-core X luajittex cjk -doc -source tk xetex
+# [ebuild  N     ]    dev-tex/bibtexu-3.71_p20170524::gentoo  USE="-doc -source" 10 KiB
+# [ebuild  N     ]    app-text/dvipsk-5.997_p20170524::gentoo  USE="-doc -source" 34 KiB
+# [ebuild  N     ]    app-text/ps2pkm-1.8_p20170524::gentoo  0 KiB
+# [ebuild  N     ]    dev-libs/zziplib-0.13.62-r2::gentoo  USE="-doc -sdl -static-libs -test" 670 KiB
+# [ebuild  N     ]    sys-apps/ed-1.14.2::gentoo  90 KiB
+# [ebuild  N     ]    dev-libs/kpathsea-6.2.3_p20170524:0/6.2.3::gentoo  USE="-doc -source -static-libs" 42 KiB
+# end
+# [ebuild  N     ] dev-texlive/texlive-latexrecommended-2017::gentoo  USE="-doc -source" 14,243 KiB
+
+dev-tex/cjk-latex -doc emacs
+
+# for node
+net-libs/nodejs icu inspector npm snapshot ssl -debug -doc -systemtap -test
+net-libs/nghttp2 cxx threads -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml
+# end
+
+# add for ecl
+dev-lisp/ecls X cxx libatomic threads unicode -debug emacs gengc precisegc
+app-text/texi2html unicode
+# end
+
+dev-scheme/guile deprecated networking nls regex threads -debug -debug-malloc
+
+# lisp
+# [nomerge       ] dev-lisp/sbcl-1.4.13:0/1.4.13::gentoo  USE="threads unicode zlib -debug -doc -pax_kernel -source" 
+# [nomerge       ]  dev-lisp/asdf-3.3.2-r1:0/3.3.2-r1::gentoo  USE="-doc -test" 
+# [nomerge       ]   dev-lisp/uiop-3.3.2::gentoo 
+# [ebuild  N     ]    virtual/commonlisp-0::gentoo  0 KiB
+# [ebuild  N     ]     dev-lisp/sbcl-1.4.13:0/1.4.13::gentoo  USE="threads unicode zlib -debug -doc -pax_kernel -source" 15,948 KiB
+# [ebuild  N     ]   dev-lisp/uiop-3.3.2::gentoo  96 KiB
+# [ebuild  N     ]    dev-lisp/asdf-3.3.2-r1:0/3.3.2-r1::gentoo  USE="-doc -test" 472 KiB
+# end
+
+# for reinstall glib
+# dev-libs/libpcre-8.42:3::gentoo  USE="bzip2 cxx jit readline recursion-limit (unicode) zlib -libedit -pcre16* -pcre32 -static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+# [ebuild   R    ] sys-apps/util-linux-2.32.1::gentoo  USE="cramfs ncurses nls pam readline static-libs suid systemd tty-helpers udev unicode -build -caps -fdformat -kill -python (-selinux) -slang -test" ABI_X86="32* (64) (-x32)" PYTHON_SINGLE_TARGET="python3_6 -python2_7 -python3_4 -python3_5 -python3_7" PYTHON_TARGETS="python2_7 python3_6 -python3_4 -python3_5 -python3_7" 0 KiB
+dev-libs/glib mime xattr dbus -debug (-fam) (-selinux) -static-libs -systemtap -test -utils
+# end
+media-fonts/wqy-bitmapfont X
+www-plugins/adobe-flash nsplugin ppapi
+
+# for install compton
+# [ebuild  N     ] dev-libs/libconfig-1.7.2:0/11::gentoo  USE="cxx -static-libs" ABI_X86="(64) -32 (-x32)" 2,948 KiB
+x11-misc/compton drm pcre -dbus -opengl -xinerama
+# end
+
+app-misc/cmatrix X
+media-fonts/fontawesome X otf ttf
+app-misc/ranger -test
+media-sound/ncmpcpp -clock -icu -outputs -taglib -visualizer
+www-client/google-chrome plugins
+
+# for instal
+#[ebuild  N     ] media-sound/spotify-1.0.92::gentoo  USE="-libnotify -pax_kernel -pulseaudio -systray"
+#[ebuild  N     ]  dev-python/dbus-python-1.2.8::gentoo  USE="-doc -examples -test"
+#[ebuild  N     ]  gnome-extra/zenity-3.28.1::gentoo  USE="-debug -libnotify -webkit"
+# end
+
+# for install eix
+# [ebuild  N     ] app-shells/push-2.0-r1::gentoo  3 KiB
+# [ebuild  N     ] app-shells/quoter-3.0_p2-r1::gentoo  11 KiB
+app-portage/eix nls -debug -doc -sqlite
+# end
+
+#
+# [ebuild  N     ] app-portage/demerge-0.047-r3::gentoo  11 KiB
+dev-perl/PortageXS -minimal
+# [ebuild  N     ]   dev-perl/Shell-EnvImporter-1.70.0-r2::gentoo  16 KiB
+# [ebuild  N     ]    dev-perl/Class-MethodMaker-2.240.0::gentoo  76 KiB
+
+# for install deepin-wine-QQ
+#[ebuild  N     ] app-arch/p7zip-16.02-r4::gentoo  USE="pch -doc -kde -rar (-static) -wxwidgets" ABI_X86="(-x32)" 0 KiB
+#[ebuild     U  ] media-libs/alsa-lib-1.1.7::gentoo [1.1.6-r1::gentoo] USE="alisp thread-safety -debug -doc -python" ABI_X86="32 (64) (-x32)" PYTHON_SINGLE_TARGET="python3_6 -python2_7 -python3_4 -python3_5 -python3_7%" PYTHON_TARGETS="python2_7 python3_6 -python3_4 -python3_5 -python3_7%" 0 KiB
+#[ebuild  N     ] net-libs/libpcap-1.9.0::gentoo  USE="-bluetooth -dbus -netlink -static-libs -usb" ABI_X86="32 (64) (-x32)" 0 KiB
+#[ebuild  NS    ] sys-libs/db-5.3.28-r3:5.3::gentoo [6.0.35-r1:6.0::gentoo] USE="cxx -doc -examples -java -tcl -test" ABI_X86="(64) -32 (-x32)" 34,268 KiB
+#[ebuild   R    ] x11-libs/libICE-1.0.9-r2::gentoo  USE="ipv6 -doc -static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] x11-libs/libXfixes-5.0.3-r1::gentoo  USE="-static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild     U  ] dev-libs/wayland-1.16.0::gentoo [1.15.0::gentoo] USE="-doc -static-libs" ABI_X86="32* (64) (-x32)" 426 KiB
+#[ebuild   R    ] x11-libs/libXrandr-1.5.1-r1::gentoo  USE="-static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] x11-libs/libXxf86vm-1.1.4-r1::gentoo  USE="-static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] x11-libs/libxshmfence-1.3-r1::gentoo  USE="-static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] media-libs/flac-1.3.2-r1::gentoo  USE="cxx (-altivec) -debug -ogg* -static-libs" ABI_X86="32* (64) (-x32)" CPU_FLAGS_X86="sse" 0 KiB
+#[ebuild   R    ] media-libs/libvorbis-1.3.6::gentoo  USE="-static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] media-sound/mpg123-1.25.10-r1::gentoo  USE="alsa ipv6 (-altivec) (-coreaudio) -int-quality -jack -nas -oss -portaudio -pulseaudio -sdl*" ABI_X86="32* (64) (-x32)" CPU_FLAGS_X86="sse (-3dnow) (-3dnowext) (-mmx)" 0 KiB
+#[ebuild     U  ] x11-libs/libSM-1.2.3::gentoo [1.2.2-r2::gentoo] USE="ipv6 uuid -doc -static-libs" ABI_X86="32* (64) (-x32)" 355 KiB
+#[ebuild   R    ] x11-libs/libXi-1.7.9-r1::gentoo  USE="-doc -static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] x11-libs/libXdamage-1.1.4-r2::gentoo  USE="-static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild     U  ] media-libs/libsndfile-1.0.28-r4::gentoo [1.0.28-r3::gentoo] USE="alsa -minimal -sqlite -static-libs -test" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] x11-libs/libXtst-1.2.3-r1::gentoo  USE="-doc -static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] net-nds/openldap-2.4.45::gentoo  USE="berkdb crypt ipv6 ssl syslog tcpd -cxx -debug -experimental -gnutls -iodbc -kerberos -kinit -libressl -minimal* -odbc -overlays -pbkdf2 -perl -samba -sasl (-selinux) -sha2 -slp -smbkrb5passwd -static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] sys-apps/systemd-239-r1:0/2::gentoo  USE="acl gcrypt kmod lz4 pam pcre resolvconf seccomp split-usr ssl sysv-utils -apparmor -audit -build -cryptsetup -curl -elfutils -gnuefi -http -idn -importd -libidn2 -lzma -nat -policykit* -qrcode (-selinux) -test -vanilla -xkb" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild  N     ] media-libs/libv4l-1.14.1::gentoo  USE="-jpeg" ABI_X86="(64) -32 (-x32)" 0 KiB
+#[ebuild   R    ] media-sound/pulseaudio-12.2::gentoo  USE="X alsa alsa-plugin asyncns caps gdbm glib ipv6 orc qt5 ssl systemd tcpd udev webrtc-aec -bluetooth* -dbus* -doc -equalizer -gconf -gtk -jack -libressl -libsamplerate -lirc -native-headset (-neon) -ofono-headset (-oss) -realtime (-selinux) -sox (-system-wide) -test -zeroconf" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild     U  ] media-plugins/alsa-plugins-1.1.7::gentoo [1.1.6::gentoo] USE="mix pulseaudio usb_stream -arcam_av -debug -ffmpeg -jack -libav -libsamplerate -oss -speex" ABI_X86="32* (64) (-x32)" 362 KiB
+#[ebuild     U  ] sys-devel/llvm-7.0.0-r1:7::gentoo [7.0.0:7::gentoo] USE="libffi ncurses -debug -doc -exegesis -gold -libedit -test -xar -xml*" ABI_X86="32* (64) (-x32)" LLVM_TARGETS="AMDGPU BPF NVPTX (X86) -AArch64 -ARM -Hexagon -Lanai -MSP430 -Mips -PowerPC -Sparc -SystemZ -XCore" 0 KiB
+#[ebuild     U  ] media-libs/mesa-18.2.3::gentoo [18.2.1::gentoo] USE="classic dri3 egl gallium gbm llvm wayland -d3d9 -debug -gles1 -gles2 -lm_sensors -opencl -osmesa -pax_kernel -pic (-selinux) -test -unwind -vaapi -valgrind -vdpau -vulkan -xa -xvmc" ABI_X86="32* (64) (-x32)" VIDEO_CARDS="(-freedreno) -i915 -i965 (-imx) -intel -nouveau -r100 -r200 -r300 -r600 -radeon -radeonsi (-vc4) -virgl (-vivante) -vmware" 11,110 KiB
+#[ebuild   R    ] virtual/opengl-7.0-r2::gentoo  ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild   R    ] media-libs/glu-9.0.0-r1::gentoo  USE="-static-libs" ABI_X86="32* (64) (-x32)" 0 KiB
+#[ebuild  N     ] media-libs/openal-1.19.1::gentoo  USE="alsa qt5 (-coreaudio) -debug -jack -oss -portaudio -pulseaudio -sdl" ABI_X86="32 (64) (-x32)" CPU_FLAGS_X86="sse sse2 -sse4_1" 564 KiB
+#[ebuild  N     ] app-emulation/deepin-wine-2.18.4::gentoo-zh  19,818 KiB
+#[ebuild  N     ] app-emulation/deepin-wine-helper-1.0.27::gentoo-zh  700 KiB
+#[ebuild  N     ] net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh  89,900 KiB
+
+# [ebuild  N     ] app-emulation/deepin-wine-2.18.4::gentoo-zh  19,818 KiB
+# [ebuild  N     ] app-emulation/deepin-wine-helper-1.0.27::gentoo-zh  700 KiB
+# [ebuild  N     ] net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh  89,900 KiB
+
+# [ebuild  N     ] app-emulation/deepin-wine-2.18.4::gentoo-zh  19,818 KiB
+# [ebuild  N     ] app-emulation/deepin-wine-helper-1.0.27::gentoo-zh  700 KiB
+# [ebuild  N     ] net-im/deepin-wine-wechat-2.6.0.40.1::gentoo-zh  44,686 KiB
+
+# end
+
+# app-arch/p7zip-16.02-r4::gentoo USE="kde pch -doc -rar (-static) wxwidgets
+
+app-admin/sudo nls pam sendmail -gcrypt -ldap -offensive -openssl -sasl (-selinux) -skey -sssd
+
+dev-qt/qtgui jpeg
+gnome-base/gvfs http systemd udev -afp -archive -bluray -cdda -elogind -fuse -gnome-keyring -gnome-online-accounts -google -gphoto2 -ios -mtp -nfs -policykit -samba -test udisks -zeroconf
+net-libs/nodejs inspector npm snapshot ssl -debug -doc icu -systemtap -test
+dev-python/pip -vanilla
+dev-embedded/sdcc boehm-gc sdcpp device-lib -doc ds390 ds400 gbz80 hc08 mcs51 non-free packihx pic14 pic16 r2k r3ka s08 sdbinutils sdcdb stm8 tlcs90 ucsim z180 z80
+# sys-process/atop
+# app-admin/whowatch
+sys-process/lsof ipv6 -examples -rpc (-selinux) -static
+sys-process/htop unicode -openvz -vserver
+app-admin/conky apcupsd audacious curl cmus eve hddtemp ical imlib iostats irc -lua-cairo -lua-imlib -lua-rsvg math xmms2 wifi webserver weather-xoap weather-metar thinkpad rss moc mpd mysql nano-syntax nvidia portmon
+media-gfx/feh  curl exif xinerama
+app-office/libreoffice accessibility -branding dbus eds firebird gtk java kde mysql coinmp pdfimport vlc
+x11-misc/polybar alsa curl i3wm ipc mpd -network pulseaudio
+
+#x11-misc/dmenu savedconfig xinerama
+x11-misc/i3status filecaps pulseaudio
+app-i18n/ibus emoji gconf gtk2 introspection libnotify unicode
+#app-editors/emacs-26.1-r3 threads tiff toolkit-scroll-bars xpm xft wide-int source motif json libxm12 m17n-lib gsettings gpm gif gfile gconf games dynamic-loading athena Xaw3d
+# required by app-editors/gedit-3.28.1::gentoo
+# required by gedit (argument)
+>=dev-libs/libpeas-1.22.0 gtk
+
+media-libs/alsa-lib alisp thread-safety
+#app-i18n/fcitx-4.2.9.6 +table
+
+# required by media-sound/pulseaudio-12.2::gentoo[alsa-plugin,alsa]
+# required by media-sound/netease-cloud-music-1.1.0::gentoo-zh
+# required by media-sound/netease-cloud-music (argument)
+>=media-plugins/alsa-plugins-1.1.6 pulseaudio
+
+# required by app-misc/neofetch-5.0.0::gentoo[X]
+# required by app-misc/neofetch (argument)
+>=www-client/w3m-0.5.3_p20180125 imlib
+
+net-wireless/iwd wired client monitor
+x11-base/xorg-server udev
+app-admin/sysklogd logrotate
+app-misc/neofetch X
+>=media-fonts/encodings-1.0.4-r3 -X
+#- media-fonts/encodings-1.0.4-r3 (Change USE: -X)
+=sys-apps/dbus-1.10.24 user-session
+>=app-shells/zsh-5.6.2 gdbm pcre unicode doc
+
+##shutter add then 
+# required by gnome-base/gnome-keyring-3.28.2::gentoo
+# required by app-crypt/libsecret-0.18.6-r1::gentoo
+# required by app-crypt/pinentry-1.1.0-r2::gentoo[gnome-keyring]
+# required by app-crypt/gnupg-2.2.10::gentoo
+# required by app-portage/gemato-14.0::gentoo[gpg]
+# required by sys-apps/portage-2.3.50-r4::gentoo[rsync-verify,-build]
+# required by app-admin/perl-cleaner-2.26-r1::gentoo
+# required by dev-lang/perl-5.26.2::gentoo
+# required by media-gfx/imagemagick-7.0.8.12::gentoo[perl]
+# required by virtual/imagemagick-tools-0::gentoo
+# required by x11-misc/shutter-0.93.1-r3::gentoo
+# required by x11-misc/shutter (argument)
+>=app-crypt/gcr-3.28.0 gtk
+# required by gnome-base/gnome-keyring-3.28.2::gentoo
+# required by app-crypt/libsecret-0.18.6-r1::gentoo
+>=app-crypt/pinentry-1.1.0-r2 gnome-keyring
+# required by x11-misc/shutter-0.93.1-r3::gentoo
+# required by x11-misc/shutter (argument)
+>=virtual/imagemagick-tools-0 perl
+# required by virtual/imagemagick-tools-0::gentoo
+# required by x11-misc/shutter-0.93.1-r3::gentoo
+# required by x11-misc/shutter (argument)
+>=media-gfx/imagemagick-7.0.8.12 perl
+
+
+## add for deepin qq
+##>>start
+# required by media-plugins/alsa-plugins-1.1.6::gentoo
+# required by media-sound/pulseaudio-12.2::gentoo[alsa-plugin,alsa]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=media-libs/alsa-lib-1.1.6-r1 abi_x86_32
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=media-libs/lcms-2.9 abi_x86_32
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=net-nds/openldap-2.4.45 abi_x86_32
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=media-sound/mpg123-1.25.10-r1 abi_x86_32
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=media-libs/openal-1.19.0 abi_x86_32
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=net-libs/libpcap-1.9.0 abi_x86_32
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=media-sound/pulseaudio-12.2 abi_x86_32
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=media-libs/glu-9.0.0-r1 abi_x86_32
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=media-libs/mesa-18.2.1 abi_x86_32
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/udis86-1.7.2 abi_x86_32
+# required by media-libs/mesa-18.2.1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/expat-2.2.6 abi_x86_32
+# required by media-libs/mesa-18.2.1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=x11-libs/libxshmfence-1.3-r1 abi_x86_32
+# required by media-libs/mesa-18.2.1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=x11-libs/libXdamage-1.1.4-r2 abi_x86_32
+# required by media-libs/mesa-18.2.1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=x11-libs/libXxf86vm-1.1.4-r1 abi_x86_32
+# required by x11-libs/libXi-1.7.9-r1::gentoo
+# required by x11-libs/libXtst-1.2.3-r1::gentoo
+# required by media-sound/pulseaudio-12.2::gentoo[X]
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=x11-libs/libXfixes-5.0.3-r1 abi_x86_32
+# required by media-libs/mesa-18.2.1::gentoo[wayland]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/wayland-1.15.0 abi_x86_32
+# required by media-libs/mesa-18.2.1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=x11-libs/libdrm-2.4.94 abi_x86_32
+# required by media-libs/mesa-18.2.1::gentoo[-video_cards_radeonsi,-opencl,llvm,-video_cards_r600,-video_cards_radeon]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=sys-devel/llvm-7.0.0 abi_x86_32
+# required by media-libs/mesa-18.2.1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=x11-libs/libXrandr-1.5.1-r1 abi_x86_32
+# required by x11-libs/libXrandr-1.5.1-r1::gentoo
+# required by media-libs/mesa-18.2.1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=x11-libs/libXrender-0.9.10-r1 abi_x86_32
+# required by sys-devel/llvm-7.0.0::gentoo[ncurses]
+# required by media-libs/mesa-18.2.1::gentoo[-video_cards_radeonsi,-opencl,llvm,-video_cards_r600,-video_cards_radeon]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=sys-libs/ncurses-6.1-r3 abi_x86_32
+# required by sys-devel/llvm-7.0.0::gentoo[xml]
+# required by media-libs/mesa-18.2.1::gentoo[-video_cards_radeonsi,-opencl,llvm,-video_cards_r600,-video_cards_radeon]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/libxml2-2.9.8 abi_x86_32
+# required by dev-libs/libxml2-2.9.8::gentoo[icu]
+# required by dev-libs/wayland-1.15.0::gentoo
+# required by media-libs/mesa-18.2.1::gentoo[wayland]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/icu-62.1 abi_x86_32
+# required by sys-libs/ncurses-6.1-r3::gentoo[gpm]
+# required by sys-apps/util-linux-2.32.1::gentoo[ncurses]
+# required by x11-libs/libSM-1.2.2-r2::gentoo[uuid]
+# required by x11-libs/wxGTK-3.0.4::gentoo[X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=sys-libs/gpm-1.20.7-r2 abi_x86_32
+# required by media-sound/pulseaudio-12.2::gentoo
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=media-libs/libsndfile-1.0.28-r3 abi_x86_32
+# required by media-sound/pulseaudio-12.2::gentoo[X]
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=x11-libs/libSM-1.2.2-r2 abi_x86_32
+# required by x11-libs/libSM-1.2.2-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=x11-libs/libICE-1.0.9-r2 abi_x86_32
+# required by media-sound/pulseaudio-12.2::gentoo[X]
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=x11-libs/libXtst-1.2.3-r1 abi_x86_32
+# required by sys-apps/systemd-239-r1::gentoo
+# required by sys-apps/dbus-1.12.10::gentoo[systemd]
+# required by net-libs/libpcap-1.9.0::gentoo[dbus]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=sys-libs/libcap-2.25-r1 abi_x86_32
+# required by media-sound/pulseaudio-12.2::gentoo[glib]
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=dev-libs/glib-2.56.2 abi_x86_32
+# required by media-sound/pulseaudio-12.2::gentoo[tcpd]
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=sys-apps/tcp-wrappers-7.6.22-r1 abi_x86_32
+# required by media-sound/pulseaudio-12.2::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=sys-apps/dbus-1.12.10 abi_x86_32
+# required by media-sound/pulseaudio-12.2::gentoo[asyncns]
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=net-libs/libasyncns-0.8-r4 abi_x86_32
+# required by media-sound/pulseaudio-12.2::gentoo[systemd]
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=sys-apps/systemd-239-r1 abi_x86_32
+# required by media-sound/pulseaudio-12.2::gentoo[alsa-plugin,alsa]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=media-plugins/alsa-plugins-1.1.6 abi_x86_32
+# required by sys-apps/systemd-239-r1::gentoo
+# required by sys-apps/dbus-1.12.10::gentoo[systemd]
+# required by net-libs/libpcap-1.9.0::gentoo[dbus]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=sys-apps/util-linux-2.32.1 abi_x86_32
+# required by sys-apps/systemd-239-r1::gentoo[gcrypt]
+# required by sys-apps/dbus-1.12.10::gentoo[systemd]
+# required by net-libs/libpcap-1.9.0::gentoo[dbus]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/libgcrypt-1.8.3 abi_x86_32
+# required by sys-apps/systemd-239-r1::gentoo[lz4]
+# required by sys-apps/dbus-1.12.10::gentoo[systemd]
+# required by net-libs/libpcap-1.9.0::gentoo[dbus]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=app-arch/lz4-1.8.3 abi_x86_32
+# required by dev-libs/libgcrypt-1.8.3::gentoo
+# required by sys-apps/systemd-239-r1::gentoo[gcrypt]
+# required by sys-apps/dbus-1.12.10::gentoo[systemd]
+# required by net-libs/libpcap-1.9.0::gentoo[dbus]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/libgpg-error-1.32 abi_x86_32
+# required by dev-libs/glib-2.56.2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/libpcre-8.42 abi_x86_32
+# required by dev-libs/glib-2.56.2::gentoo[xattr]
+# required by x11-libs/wxGTK-3.0.4::gentoo[X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=sys-apps/attr-2.4.48-r3 abi_x86_32
+# required by x11-libs/libXtst-1.2.3-r1::gentoo
+# required by media-sound/pulseaudio-12.2::gentoo[X]
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=x11-libs/libXi-1.7.9-r1 abi_x86_32
+# required by media-libs/libsndfile-1.0.28-r3::gentoo[-minimal]
+# required by media-sound/pulseaudio-12.2::gentoo
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=media-libs/flac-1.3.2-r1 abi_x86_32
+# required by media-libs/flac-1.3.2-r1::gentoo[ogg]
+# required by media-libs/libsndfile-1.0.28-r3::gentoo[-minimal]
+# required by media-sound/pulseaudio-12.2::gentoo
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=media-libs/libogg-1.3.3 abi_x86_32
+# required by media-libs/libsndfile-1.0.28-r3::gentoo[-minimal]
+# required by media-sound/pulseaudio-12.2::gentoo
+# required by media-plugins/alsa-plugins-1.1.6::gentoo[pulseaudio]
+>=media-libs/libvorbis-1.3.6 abi_x86_32
+# required by net-nds/openldap-2.4.45::gentoo[-libressl,-gnutls,ssl]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/openssl-1.0.2p abi_x86_32
+# required by media-libs/lcms-2.9::gentoo[tiff]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=media-libs/tiff-4.0.9-r4 abi_x86_32
+# required by media-libs/lcms-2.9::gentoo[jpeg]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=virtual/jpeg-0-r2:0 abi_x86_32
+# required by virtual/jpeg-0-r2::gentoo
+# required by media-libs/libv4l-1.14.1::gentoo
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=media-libs/libjpeg-turbo-2.0.0 abi_x86_32
+# required by net-libs/libpcap-1.9.0::gentoo[dbus]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=virtual/pkgconfig-0-r1 abi_x86_32
+# required by virtual/pkgconfig-0-r1::gentoo
+# required by net-libs/libpcap-1.9.0::gentoo[dbus]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-util/pkgconfig-0.29.2 abi_x86_32
+# required by dev-libs/glib-2.56.2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=virtual/libintl-0-r2 abi_x86_32
+# required by sys-devel/llvm-7.0.0::gentoo[libffi]
+# required by media-libs/mesa-18.2.1::gentoo[-video_cards_radeonsi,-opencl,llvm,-video_cards_r600,-video_cards_radeon]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=virtual/libffi-3.3_rc0 abi_x86_32
+# required by virtual/libffi-3.3_rc0::gentoo
+# required by sys-devel/llvm-7.0.0::gentoo[libffi]
+# required by media-libs/mesa-18.2.1::gentoo[-video_cards_radeonsi,-opencl,llvm,-video_cards_r600,-video_cards_radeon]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[opengl,X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=dev-libs/libffi-3.3_rc0 abi_x86_32
+# required by dev-libs/glib-2.56.2::gentoo
+# required by x11-libs/wxGTK-3.0.4::gentoo[X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=virtual/libiconv-0-r2 abi_x86_32
+# required by sys-apps/systemd-239-r1::gentoo[pam]
+# required by sys-apps/dbus-1.12.10::gentoo[systemd]
+# required by net-libs/libpcap-1.9.0::gentoo[dbus]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=virtual/pam-0-r1 abi_x86_32
+# required by virtual/pam-0-r1::gentoo
+# required by sys-apps/systemd-239-r1::gentoo[pam]
+# required by sys-apps/dbus-1.12.10::gentoo[systemd]
+# required by net-libs/libpcap-1.9.0::gentoo[dbus]
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=sys-libs/pam-1.3.1 abi_x86_32
+# required by sys-libs/pam-1.3.1::gentoo[berkdb]
+# required by sys-apps/util-linux-2.32.1::gentoo[pam]
+# required by x11-libs/libSM-1.2.2-r2::gentoo[uuid]
+# required by x11-libs/wxGTK-3.0.4::gentoo[X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=sys-libs/db-6.0.35-r1 abi_x86_32
+# required by sys-libs/pam-1.3.1::gentoo[cracklib]
+# required by sys-apps/util-linux-2.32.1::gentoo[pam]
+# required by x11-libs/libSM-1.2.2-r2::gentoo[uuid]
+# required by x11-libs/wxGTK-3.0.4::gentoo[X]
+# required by app-arch/p7zip-16.02-r4::gentoo[wxwidgets]
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=sys-libs/cracklib-2.9.6-r1 abi_x86_32
+# required by media-libs/glu-9.0.0-r1::gentoo
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=virtual/opengl-7.0-r2 abi_x86_32
+# required by app-emulation/deepin-wine-2.18.4::gentoo-zh
+# required by app-emulation/deepin-wine-helper-1.0.27::gentoo-zh
+# required by net-im/deepin-wine-QQ-8.9.19983.19::gentoo-zh
+# required by net-im/deepin-wine-QQ (argument)
+>=virtual/opencl-0-r5 abi_x86_32
+##>>end
