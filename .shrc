@@ -2,12 +2,18 @@
 
 ### change PATH
 export PATH=$HOME/.local/bin:$PATH
+export GOPATH=$HOME/goProjects
+export PATH=$PATH:$GOPATH/bin
 
 ### alias
 alias lm="ls -la | more"
 alias h="history"
 alias chmodx="chmod u+x"
 alias ipython="ipython --pylab"
+
+alias cat="ccat"
+export GOPROXY=https://goproxy.io
+export GO111MODULE=on
 
 release_name=`uname -r | cut -d '-' -f 2`
 if test $release_name = 'gentoo' ; then

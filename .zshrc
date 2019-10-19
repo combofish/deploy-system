@@ -8,12 +8,43 @@
 export ZSH=$HOME/.oh-my-zsh
 [[ -f ~/.shrc ]] && . ~/.shrc
 
+alias cls='clear'
+alias ll='ls -l'
+alias la='ls -a'
+alias vi='vim'
+alias javac="javac -J-Dfile.encoding=utf8"
+alias grep="grep --color=auto"
+alias -s html=mate   # 在命令行直接输入后缀为 html 的文件名，会在 TextMate 中打开
+alias -s rb=mate     # 在命令行直接输入 ruby 文件，会在 TextMate 中打开
+alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
+alias -s js=vi
+alias -s c=vi
+alias -s java=vi
+alias -s txt=vi
+alias -s gz='tar -xzvf'
+alias -s tgz='tar -xzvf'
+alias -s zip='unzip'
+alias -s bz2='tar -xjvf'
+
+# Correction
+# setopt correctall
+
+# FILE ~/.zshrcEnabling Portage completions and Gentoo prompt for zsh
+autoload -U compinit promptinit
+compinit
+promptinit; prompt gentoo
+
+# To enable a cache for the completions add:
+# FILE ~/.zshrcEnabling cache for the completions for zsh
+zstyle ':completion::complete:*' use-cache 1
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+# ZSH_THEME="gentoo"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -67,7 +98,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git
+         autojump
+         go
+         golang
+         emacs)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,3 +134,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#PATH="/home/larry/perl5/bin${PATH:+:${PATH}}"; export PATH;
+#PERL5LIB="/home/larry/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+#PERL_LOCAL_LIB_ROOT="/home/larry/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+#PERL_MB_OPT="--install_base \"/home/larry/perl5\""; export PERL_MB_OPT;
+#PERL_MM_OPT="INSTALL_BASE=/home/larry/perl5"; export PERL_MM_OPT;

@@ -1,2 +1,0 @@
-sys-apps/pacman gpg -curl -debug -doc -libressl -test
-media-libs/gst-plugins-base theora
