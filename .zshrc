@@ -5,7 +5,8 @@
 
 # Path to your oh-my-zsh installation.
 
-export ZSH=$HOME/.oh-my-zsh
+# export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/Documents/ohmyzsh
 [[ -f ~/.shrc ]] && . ~/.shrc
 
 alias cls='clear'
@@ -32,7 +33,8 @@ alias -s bz2='tar -xjvf'
 # FILE ~/.zshrcEnabling Portage completions and Gentoo prompt for zsh
 autoload -U compinit promptinit
 compinit
-promptinit; prompt gentoo
+promptinit
+# promptinit; prompt gentoo
 
 # To enable a cache for the completions add:
 # FILE ~/.zshrcEnabling cache for the completions for zsh
@@ -99,7 +101,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-         autojump
+         # autojump
          go
          golang
          emacs)
