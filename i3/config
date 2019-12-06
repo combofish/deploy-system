@@ -263,12 +263,13 @@ bindsym $mod+Shift+Tab workspace prev
 # floating_modifier $mod
 
 #exec_always --no-startup-id feh --bg-scale "/home/larry/Downloads/taikong-004.jpg"
-exec_always --no-startup-id feh --bg-scale "/home/larry/Pictures/blue.jpg"
+## exec_always --no-startup-id feh --bg-scale "/home/larry/Pictures/blue.jpg"
 exec_always --no-startup-id /usr/bin/xscreensaver -no-splash &
 ###exec_always --no-startup-id /usr/bin/conky -c ~/.config/conky/conky-seamod/conkyrc.lua &
-exec_always --no-startup-id /usr/bin/conky -c ~/.config/conky/conkyrc2.lua &
+## exec_always --no-startup-id /usr/bin/conky -c ~/.config/conky/conkyrc2.lua &
 # exec_always --no-startup-id /usr/bin/conky -c ~/.config/conky/conkyrc.lua &
-exec_always --no-startup-id /usr/bin/conky -c ~/.config/conky/conkyrc_test.lua &
+## exec_always --no-startup-id /usr/bin/conky -c ~/.config/conky/conkyrc_test.lua &
+
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 
 exec --no-startup-id xcompmgr -FCf -nc -t -5 &
@@ -317,8 +318,8 @@ client.unfocused        #333333 #000000 #FFFFFF #292d2e #222222
 # 呼出第一个便笺本
 #bindsym $mod+minus scratchpad show
 
-gaps inner 7
-gaps outer 9
+## gaps inner 7
+## gaps outer 9
 
 bindsym $mod+m bar mode toggle
 # # # Start i3bar to display a workspace bar (plus the system information i3status
@@ -326,7 +327,8 @@ bindsym $mod+m bar mode toggle
 bar {
 
 output            LVDS-1
-status_command i3blocks -c ~/.config/i3blocks/config
+## status_command i3blocks -c ~/.config/i3blocks/config
+status_command i3blocks
 # status_command py3status -c ~/.config/i3status/i3status.conf
 position top
 mode hide
