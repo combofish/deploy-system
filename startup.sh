@@ -35,6 +35,7 @@ config_urxvt(){
 
 config_anaconda(){
     ln ./.condarc ~/.condarc
+    # echo ". /home/larry/anaconda3/etc/profile.d/conda.sh" >> ~/.zshrc    
 }
 
 config_python3_8_install(){
@@ -45,6 +46,7 @@ config_go_language(){
     sudo apt-get install golang
 }
 
+# this func mov to ./script/combo file.
 config_python_envs(){
     # conda create -n test-py36 python=3.6
     conda activate test-py36
@@ -72,7 +74,7 @@ config_system(){
     # config_urxvt
     # config_anaconda
     # config_go_language
-    config_python_envs
+    # config_python_envs
     # config_zsh
 
     # config_tools

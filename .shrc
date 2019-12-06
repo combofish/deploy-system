@@ -8,6 +8,7 @@ export PATH=$PATH:$GOPATH/bin
 export DOTFILES=$HOME/Documents/dotfiles
 export PATH=$PATH:$DOTFILES/bin:$DOTFILES/script
 
+. /home/larry/anaconda3/etc/profile.d/conda.sh    
 
 ### alias
 alias lm="ls -la | more"
