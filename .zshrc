@@ -102,6 +102,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
          # autojump
+	 zsh-autosuggestions
          go
          golang
          emacs)

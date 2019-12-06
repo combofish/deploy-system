@@ -1,0 +1,7 @@
+#!/usr/bin/zsh
+
+script(){
+    echo ">>> script..."
+}
+
+script
