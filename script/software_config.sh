@@ -1,22 +1,8 @@
 #!/usr/bin/zsh
-# author: combofish
-# email: combofish49@gmail.com
-# description: shell script for config system.
+# author:combofish
+# email:combofish49@gmail.com 
+# Filename: software.sh
 
-config_python_envs(){
-    # conda create -n test-py36 python=3.6
-
-    # exec next line fail
-    # conda activate test-py36
-
-    conda install tensorflow=1.15 pillow
-}
-
-config_python_envs_cv(){
-    # conda create -n test-py36-cv python=3.6
-    # conda activate test-py36-cv
-    conda install opencv
-}
 
 config_setup_ros(){
     # 
@@ -53,21 +39,6 @@ config_qtcreator(){
     sudo apt-get install qtcreator
 }
 
-# 安装python 模块
-config_python_modules(){
-    echo "install python module"
-    # /usr/bin/pip install --upgrade pip --user larry
-    # /usr/bin/pip install pdfminer		
-
-}
-
-# install softwares that use frequency.
-config_software(){
-    softwares=(thunar arduino okular ranger htop glances whowatch lua5.3 rustc) # golang ruby python java g++ gcc
-    sudo apt-get install ${softwares[@]}
-    
-}
-
 script(){
     echo ">>> script..."
     ## python env. no use.
@@ -86,3 +57,6 @@ script(){
 }
 
 script
+
+
+
