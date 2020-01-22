@@ -202,7 +202,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-exec --no-startup-id google-chrome-stable
+# exec --no-startup-id google-chrome-stable
+exec --no-startup-id Chromium
 exec --no-startup-id emacs
 exec --no-startup-id konsole
 
@@ -262,7 +263,10 @@ bindsym $mod+Shift+Tab workspace prev
 
 # floating_modifier $mod
 
-#exec_always --no-startup-id feh --bg-scale "/home/larry/Downloads/taikong-004.jpg"
+# exec_always --no-startup-id feh --bg-scale "/home/larry/Pictures/pexels-photo-326055.jpeg"
+exec_always --no-startup-id feh --bg-scale "/home/larry/Pictures/background-4654716_960_720.jpg"
+
+
 ## exec_always --no-startup-id feh --bg-scale "/home/larry/Pictures/blue.jpg"
 exec_always --no-startup-id /usr/bin/xscreensaver -no-splash &
 ###exec_always --no-startup-id /usr/bin/conky -c ~/.config/conky/conky-seamod/conkyrc.lua &
@@ -281,11 +285,15 @@ exec --no-starup-id xrandr --output LVDS-1 --primary
 bindsym $mod+Shift+x exec i3-sensible-terminal -e cmatrix
 bindsym $mod+b exec "xscreensaver-command --lock"
 bindsym $mod+i exec emacs
-bindsym $mod+g exec google-chrome-stable 
+# bindsym $mod+g exec google-chrome-stable 
+bindsym $mod+g exec chromium
+bindsym $mod+t exec thunar
+bindsym $mod+o exec okular
+
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # 切换窗口边框
-bindsym $mod+t border normal
+# bindsym $mod+t border normal
 bindsym $mod+y border pixel 1
 # bindsym $mod+y border 1pixel
 # bindsym $mod+u border none

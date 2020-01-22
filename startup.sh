@@ -1,8 +1,10 @@
-#!/usr/bin/sh
+#!/bin/sh
+# author:combofish
+# email:combofish49@gmail.com 
+# Filename: startup.sh
 
-# ln .vimrc ~/.vimrc
-
-# ln -s emacs.d ~/.emacs.d
+ln .vimrc ~/.vimrc
+ln -s emacs.d ~/.emacs.d
 
 config_pre_i3(){
     deps=(conky xscreensaver feh shutter rofi konsole i3status i3blocks xcompmgr)
@@ -23,7 +25,7 @@ config_i3(){
 
 config_urxvt(){
     # download
-    # sudo apt-get install rxvt-unicode
+    sudo apt-get install rxvt-unicode
     echo "config urxvt"
 
     if [ -f ~/.Xresources ]; then
@@ -38,25 +40,26 @@ config_anaconda(){
     # echo ". /home/larry/anaconda3/etc/profile.d/conda.sh" >> ~/.zshrc    
 }
 
-config_python3_8_install(){
-    sudo apt-get install python3.8
-}
+# config_python3_8_install(){
+#     sudo apt-get install python3.8
+# }
 
 config_go_language(){
     sudo apt-get install golang
 }
 
-# this func mov to ./script/combo file.
-config_python_envs(){
-    # conda create -n test-py36 python=3.6
-    conda activate test-py36
-    conda install tensorflow=1.15 pillow
-}
+# # this func mov to ./script/combo file.
+# config_python_envs(){
+#     # conda create -n test-py36 python=3.6
+#     conda activate test-py36
+#     conda install tensorflow=1.15 pillow
+# }
 
 config_zsh(){
-    # ln .shrc ~/.shrc
-    # ln .zshrc ~/.zshrc
+    ln .shrc ~/.shrc
+    ln .zshrc ~/.zshrc
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH}/zsh-autosuggestions
+    chsh -s /bin/zsh
 }
 
 # software: useful tools
@@ -67,16 +70,22 @@ config_tools(){
 }
 
 config_system(){
+    ## env var set in .shrc. Make sure its right.
     cd $DOTFILES
     echo "config system"
+
+    ## i3 desktop manager
     # config_pre_i3
+    # config_i3blocks
     # config_i3
+
+    ## install and config software
     # config_urxvt
     # config_anaconda
     # config_go_language
-    # config_python_envs
-    # config_zsh
+    config_zsh
 
+    ## prepare usefull tools
     # config_tools
 }
 
