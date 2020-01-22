@@ -71,7 +71,9 @@ config_tools(){
 
 config_system(){
     ## env var set in .shrc. Make sure its right.
-    cd $DOTFILES
+    # cd $DOTFILES
+    # make sure in DOTFILES.
+
     echo "config system"
 
     ## i3 desktop manager
