@@ -28,14 +28,23 @@ config_editor(){
 
 config_zsh(){
     echo "->>> config_zsh"
-    
+
+    if [ -f ~/.shrc ]; then
+        mv ~/.shrc ~/.shrc-$(date +"%m-%d-%Y").bak
+    fi
+
+    if [ -f ~/.zshrc ]; then
+        mv ~/.zshrc ~/.zshrc-$(date +"%m-%d-%Y").bak
+    fi
+
     ln .shrc ~/.shrc
     ln .zshrc ~/.zshrc
-    source ~/.zshrc
+    # source ~/.zshrc
+    echo "->>> Enter your passwd: "
     chsh -s /bin/zsh
 
     git clone https://github.com/ohmyzsh/ohmyzsh ../ohmyzsh
-    git clone https://github.com/zsh-users/zsh-autosuggestions ../ohmyzsh/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-autosuggestions ../ohmyzsh/plugins/zsh-autosuggestions
     
 }
 
