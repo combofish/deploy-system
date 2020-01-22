@@ -3,30 +3,45 @@
 # email:combofish49@gmail.com 
 # Filename: startup.sh
 
-ln .vimrc ~/.vimrc
-ln -s emacs.d ~/.emacs.d
+pre_install(){
+    echo "->>> pre install"
 
-config_pre_i3(){
-    deps=(conky xscreensaver feh shutter rofi konsole i3status i3blocks xcompmgr)
-    sudo apt-get install ${deps[@]}
+    sudo apt-get install emacs vim zsh rxvt-unicode 
 }
 
-config_i3blocks(){
-    mkdir ~/.config/i3blocks
-}
+config_editor(){
 
-config_i3(){
-    if [ -f ~/.config/i3/config ]; then
-        mv ~/.config/i3/config ~/.config/i3/config-$(date +"%m-%d-%Y").bak
+    echo "->>> config_editor"
+    
+    if [ -f ~/.vimrc ]; then
+        mv ~/.vimrc ~/.vimrc-$(date +"%m-%d-%Y").bak
     fi
 
-    ln ./i3/config ~/.config/i3/config
+    if [ -d ~/.emacs.d/ ]; then
+        mv ~/.emacs.d/ ~/.emacs.d-$(date +"%m-%d-%Y").bak
+    fi
+
+    ln .vimrc ~/.vimrc
+    ln -s emacs.d ~/.emacs.d
+
+}
+
+config_zsh(){
+    echo "->>> config_zsh"
+    
+    ln .shrc ~/.shrc
+    ln .zshrc ~/.zshrc
+    source ~/.zshrc
+    chsh -s /bin/zsh
+
+    git clone https://github.com/ohmyzsh/ohmyzsh ../ohmyzsh
+    git clone https://github.com/zsh-users/zsh-autosuggestions ../ohmyzsh/zsh-autosuggestions
+    
 }
 
 config_urxvt(){
-    # download
-    sudo apt-get install rxvt-unicode
-    echo "config urxvt"
+
+    echo "->>> config_urxvt"
 
     if [ -f ~/.Xresources ]; then
         mv ~/.Xresources ~/.Xresources-$(date +"%m-%d-%Y").bak
@@ -36,59 +51,26 @@ config_urxvt(){
 }
 
 config_anaconda(){
+    echo "->>> config_conda"
+    
+    if [ -f ~/.condarc ]; then
+        mv ~/.condarc ~/.condarc-$(date +"%m-%d-%Y").bak
+    fi
+    
     ln ./.condarc ~/.condarc
     # echo ". /home/larry/anaconda3/etc/profile.d/conda.sh" >> ~/.zshrc    
 }
 
-# config_python3_8_install(){
-#     sudo apt-get install python3.8
-# }
-
-config_go_language(){
-    sudo apt-get install golang
-}
-
-# # this func mov to ./script/combo file.
-# config_python_envs(){
-#     # conda create -n test-py36 python=3.6
-#     conda activate test-py36
-#     conda install tensorflow=1.15 pillow
-# }
-
-config_zsh(){
-    ln .shrc ~/.shrc
-    ln .zshrc ~/.zshrc
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH}/zsh-autosuggestions
-    chsh -s /bin/zsh
-}
-
-# software: useful tools
-config_tools(){
-    # ccat
-    go get -u github.com/jingweno/ccat
-    echo $(ccat -V)
-}
-
 config_system(){
-    ## env var set in .shrc. Make sure its right.
-    # cd $DOTFILES
-    # make sure in DOTFILES.
+    echo "->>> config system"
 
-    echo "config system"
+    pre_install 
 
-    ## i3 desktop manager
-    # config_pre_i3
-    # config_i3blocks
-    # config_i3
-
-    ## install and config software
-    # config_urxvt
-    # config_anaconda
-    # config_go_language
+    config_editor
     config_zsh
+    config_urxvt
+    config_anaconda
 
-    ## prepare usefull tools
-    # config_tools
 }
 
 config_system
