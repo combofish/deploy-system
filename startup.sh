@@ -3,9 +3,35 @@
 # email:combofish49@gmail.com 
 # Filename: startup.sh
 
+update_sources(){
+    release_name=`uname -n`
+    
+    if test $release_name = 'raspberrypi' ; then
+	echo "->>> for $release_name add Qinghua sources"
+	
+	if [ -f /etc/apt/sources.list ]; then
+            mv /etc/apt/sources.list /etc/apt/sources.list-$(date +"%m-%d-%Y").bak
+	fi
+
+	if [ -f /etc/apt/sources.list.d/raspi.list ~/.emacs.d/ ]; then
+            mv /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list-$(date +"%m-%d-%Y").bak
+	fi
+
+	# 编辑 `/etc/apt/sources.list` 文件，删除原文件所有内容，用以下内容取代：
+	echo "deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib" > /etc/apt/sources.list
+	echo "deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib" >> /etc/apt/sources.list
+
+	# 编辑 `/etc/apt/sources.list.d/raspi.list` 文件，删除原文件所有内容，用以下内容取代：
+	echo "deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui" > /etc/apt/sources.list.d/raspi.list
+    fi
+
+    unset release_name
+
+}
+
 pre_install(){
     echo "->>> pre install"
-
+    
     sudo apt-get install emacs vim zsh rxvt-unicode 
 }
 
@@ -73,6 +99,7 @@ config_anaconda(){
 config_system(){
     echo "->>> config system"
 
+    update_sources
     pre_install 
 
     config_editor

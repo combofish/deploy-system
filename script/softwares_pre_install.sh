@@ -8,3 +8,11 @@ config_software(){
     sudo apt-get install ${softwares[@]}
     
 }
+
+config_software_kvm(){
+    sudo apt-get -y install qemu-kvm qemu virt-manager virt-viewer libvirt-daemon-system libvirt-clients
+}
+
+config_software_kvm
+sudo systemctl start libvirtd
+sudo systemctl enable libvirtd
