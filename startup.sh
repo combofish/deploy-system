@@ -13,7 +13,7 @@ update_sources(){
             mv /etc/apt/sources.list /etc/apt/sources.list-$(date +"%m-%d-%Y").bak
 	fi
 
-	if [ -f /etc/apt/sources.list.d/raspi.list ~/.emacs.d/ ]; then
+	if [ -f /etc/apt/sources.list.d/raspi.list ]; then
             mv /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list-$(date +"%m-%d-%Y").bak
 	fi
 

@@ -264,7 +264,7 @@ bindsym $mod+Shift+Tab workspace prev
 # floating_modifier $mod
 
 # exec_always --no-startup-id feh --bg-scale "/home/larry/Pictures/pexels-photo-326055.jpeg"
-exec_always --no-startup-id feh --bg-scale "/home/larry/Pictures/background-4654716_960_720.jpg"
+exec_always --no-startup-id feh --bg-scale "/home/larry/Pictures/white-and-yellow-flower-with-green-stems-36764.jpg"
 
 
 ## exec_always --no-startup-id feh --bg-scale "/home/larry/Pictures/blue.jpg"

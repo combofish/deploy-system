@@ -26,7 +26,7 @@ config_setup_ros_workspace(){
 }
 
 config_ros_pcl_openni(){
-    sudo apt-get install ros-melodic-openni-launch
+    sudo apt-get install -y ros-melodic-openni-launch
 }
 
 config_ros_pcl(){
@@ -36,7 +36,7 @@ config_ros_pcl(){
 
 config_qtcreator(){
     sudo apt-get update
-    sudo apt-get install qtcreator
+    sudo apt-get install -y qtcreator
 }
 
 script(){
@@ -45,18 +45,14 @@ script(){
     # config_python_envs
     # config_python_envs_cv
 
-    ## ROS 
-    # config_setup_ros_workspace
-    # config_ros_pcl_openni
+    ## ROS
+    config_setup_ros_workspace
+    config_ros_pcl_openni
     # config_ros_pcl
-
-    # config_qtcreator
-    config_python_modules
-
-    config_software
+    config_qtcreator
+    
+    # config_python_modules
+    # config_software
 }
 
 script
-
-
-

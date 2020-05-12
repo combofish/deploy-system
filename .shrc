@@ -9,10 +9,11 @@ export DOTFILES=$HOME/Documents/dotfiles
 export PATH=$PATH:$DOTFILES/bin:$DOTFILES/script
 
 # conda
-source /home/larry/anaconda3/etc/profile.d/conda.sh    
+# source /home/larry/anaconda3/etc/profile.d/conda.sh    
 
 # ros
 source /opt/ros/melodic/setup.zsh
+source ~/workspace/catkin_ws/devel/setup.zsh
 
 ### alias
 alias lm="ls -la | more"

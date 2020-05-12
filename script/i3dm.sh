@@ -9,15 +9,22 @@ config_pre_i3(){
 }
 
 config_i3blocks(){
-    mkdir ~/.config/i3blocks
+    if  [ ! -d ~/.config/i3blocks/ ]; then
+	mkdir ~/.config/i3blocks
+    fi
 }
 
 config_i3(){
+    if [ ! -d ~/.config/i3/ ];then
+	mkdir -p ~/.config/i3/
+    fi
+    
     if [ -f ~/.config/i3/config ]; then
         mv ~/.config/i3/config ~/.config/i3/config-$(date +"%m-%d-%Y").bak
     fi
 
-    ln ./i3/config ~/.config/i3/config
+    # !!! run path.
+    ln ./../i3/config ~/.config/i3/config
 }
 
 config_i3dm(){
@@ -29,4 +36,5 @@ config_i3dm(){
     config_i3
 }
 
-config_i3dm
+# config_i3dm # Move to ./use.sh 
+
