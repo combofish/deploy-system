@@ -103,7 +103,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git
          # autojump
 	 zsh-autosuggestions
-         go
          golang
          emacs)
 

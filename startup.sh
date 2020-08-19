@@ -44,7 +44,7 @@ config_editor(){
     fi
 
     if [ -d ~/.emacs.d/ ]; then
-        mv ~/.emacs.d/ ~/.emacs.d-$(date +"%m-%d-%Y").bak
+        mv ~/.emacs.d ~/.emacs.d-$(date +"%m-%d-%Y").bak
     fi
 
     ln .vimrc ~/.vimrc
