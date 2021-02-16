@@ -6,17 +6,14 @@
 
 config_setup_ros(){
     # 
-    # sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-    # sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-    # sudo apt updatesudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+    sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
     sudo apt update
-    sudo apt install ros-melodic-desktop-full
-    
+    sudo apt install ros-noetic-desktop-full
+
     # echo "source /opt/ros/melodic/setup.zsh" >> ~/.zshrc
     # source ~/.zshrc
     sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
-    sudo rosdep init
-    rosdep update
 
 }
 
@@ -46,10 +43,13 @@ script(){
     # config_python_envs
     # config_python_envs_cv
 
+    sudo rosdep init
+    rosdep update
+
     ## ROS
-    config_setup_ros
-    # config_setup_ros_workspace
-    # config_ros_pcl_openni
+    # config_setup_ros
+    config_setup_ros_workspace
+    config_ros_pcl_openni
 
     # config_ros_pcl
     config_qtcreator

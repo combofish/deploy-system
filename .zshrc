@@ -6,7 +6,8 @@
 # Path to your oh-my-zsh installation.
 
 # export ZSH=$HOME/.oh-my-zsh
-export ZSH=$HOME/Documents/ohmyzsh
+# export ZSH=$HOME/Documents/ohmyzsh
+export ZSH=$HOME/GitProjects/ohmyzsh
 [[ -f ~/.shrc ]] && . ~/.shrc
 
 alias cls='clear'

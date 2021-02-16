@@ -4,7 +4,7 @@
 # Filename: i3dm.sh
 
 config_pre_i3(){
-    deps=(conky xscreensaver feh shutter rofi konsole i3status i3blocks xcompmgr)
+    deps=(rofi conky xscreensaver feh shutter rofi konsole i3status i3blocks xcompmgr)
     sudo apt-get install ${deps[@]}
 }
 
